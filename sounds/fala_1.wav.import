@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/sample.wav-db0d55c1934064dea2c0c04252e733db.sample"
+path="res://.import/fala_1.wav-a544fd75f4d177d372125ee38fefa72c.sample"
 
 [deps]
 
-source_file="res://sounds/sample.wav"
-dest_files=[ "res://.import/sample.wav-db0d55c1934064dea2c0c04252e733db.sample" ]
+source_file="res://sounds/fala_1.wav"
+dest_files=[ "res://.import/fala_1.wav-a544fd75f4d177d372125ee38fefa72c.sample" ]
 
 [params]
 
