@@ -1,15 +1,20 @@
 extends KinematicBody2D
 
-var velocity = Vector2(0,0)
+#CONSTS 
 var run_speed = 350
 var jump_speed = -800
 var gravity = 3200
+
+#Var status player
+var velocity = Vector2(0,0)
 var doubleJump = true
+
+#Animation Only
+var auxAnimationDoubleJump = 0
 var lado = 'dir'
 
-var auxAnimationDoubleJump = 0
-
 func _ready():
+	
 	pass 
 
 
