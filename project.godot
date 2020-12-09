@@ -38,7 +38,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Jogo Tipo Mario"
+config/name="Jogot tipo Mario"
 run/main_scene="res://scene/Teste.tscn"
 config/icon="res://icon.png"
 
