@@ -53,10 +53,13 @@ func _process(delta):
 					
 					accumulation = 0.0
 			Modes.CHARACTERS:
-				chunk_size = (1.0 / get_total_character_count()) * print_speed
+				var aux = get_total_character_count();
+				if aux==0:
+					aux=1;
+				chunk_size = (1.0 / aux) * print_speed
 				accumulation += delta * chunk_size
 				
-				if accumulation >= (1.0 + randf()) / get_total_character_count():
+				if accumulation >= (1.0 + randf()) / aux:
 					percent_visible += accumulation
 					
 					audio_player.stream = sounds[0]

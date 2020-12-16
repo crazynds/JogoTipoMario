@@ -11,7 +11,6 @@ var doubleJump = true
 
 #Animation Only
 var auxAnimationDoubleJump = 0
-var lado = 'dir'
 
 func _ready():
 	
@@ -53,12 +52,10 @@ func get_input(delta):
 		doubleJump=false;
 		auxAnimationDoubleJump=6
 	
-	if velocity.x>0 and lado=='esq':
+	if velocity.x>0 and scale.y>0:
 		scale.x=-1
-		lado='dir'
-	else: if velocity.x<0 and lado=='dir':
+	else: if velocity.x<0 and scale.y<0:
 		scale.x=-1
-		lado='esq'
 	
 	if auxAnimationDoubleJump>0:
 		auxAnimationDoubleJump=auxAnimationDoubleJump-1
